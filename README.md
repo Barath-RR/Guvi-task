@@ -1,7 +1,7 @@
 
 # Guvi-Task
 
-Demo link-https://drive.google.com/file/d/1oJCbpk_zX0hRHK6iVrtmIAgo1r-gyBPx/view?usp=sharing
+Demo video link-https://drive.google.com/file/d/1oJCbpk_zX0hRHK6iVrtmIAgo1r-gyBPx/view?usp=sharing
 
 Points to be followed:
 
