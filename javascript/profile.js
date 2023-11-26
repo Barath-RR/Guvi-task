@@ -19,7 +19,7 @@ function fetchUserProfile(token) {
         alert("Error fetching user profile. Please log in again.");
         window.location.href = "login.html";
       } else {
-        alert("user found")
+       
         console.log(response)
         displayUserProfile(response);
       }
@@ -32,8 +32,6 @@ function fetchUserProfile(token) {
 }
 
 function displayUserProfile(profile) {
-  console.log(profile.username);
-  alert(profile.email);
   document.getElementById("username").innerHTML = profile.username;
 document.getElementById("email").innerHTML =profile.email;
 document.getElementById("dob").innerHTML =profile.dob;
