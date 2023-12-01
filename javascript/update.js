@@ -16,7 +16,7 @@ $(document).ready(function() {
       var age = $("#age").val();
       var token = localStorage.getItem('token');
       console.log(token);
-      if (validateInput(dob, phnumber,occupation,age,u)) {
+      if (validateInput(username, dob, phnumber, occupation, age)) {
         $.ajax({
           type: "POST",
           url: "php/update.php",
