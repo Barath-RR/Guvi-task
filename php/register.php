@@ -10,11 +10,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $age = $_POST["age"];
     $num = $_POST["num"];
     $op = $_POST["op"];
-    $sql = "INSERT INTO users (username, password, email) VALUES ('$username', '$password', '$email')";
-    
+    $stmt = $conn->prepare("INSERT INTO users (username, password, email) VALUES (?,?,?)");
+    $stmt->bind_param("sss", $username,$password,$email);
+
     $query = array("username" => $username,"email"=>$email,"occupation"=>$op,"dob"=>$dob,"age"=>$age,"number"=>$num,);
     $userDetails = $profilesCollection->insertOne($query);
-    if ($conn->query($sql) === TRUE) {
+    if ($stmt->execute()) {
         $response = array("success" => true, "message" => "Registration successful!");
         echo json_encode($response);
       } else {
