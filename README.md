@@ -1,6 +1,6 @@
 
 # Guvi-Task
-
+✅ Updated video: https://drive.google.com/file/d/1yGx_8ECdSz81qykav3uL34JxwMAIaIJR/view?usp=sharing  (contains update profile page and prepared statement).
 Demo video link-https://drive.google.com/file/d/1oJCbpk_zX0hRHK6iVrtmIAgo1r-gyBPx/view?usp=sharing
 
 Points to be followed:
